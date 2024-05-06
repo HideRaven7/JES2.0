@@ -276,16 +276,16 @@ html {
 }
 
 .a-perfil::before {
-    content: url(imagenes/iconos/usuario.svg);
+    content: url(../imagenes/iconos/usuario.svg);
 }
-.a-curso::before {
-    content: url(imagenes/iconos/curso.svg);
+.a-curso::before{
+    content: url(../imagenes/iconos/curso.svg);
 }
 .a-horario::before {
-    content: url(imagenes/iconos/horario.svg);
+    content: url(../imagenes/iconos/horario.svg);
 }
 .a-calificaciones::before {
-    content: url(imagenes/iconos/libro.svg);
+    content: url(../imagenes/iconos/libro.svg);
 }
 .a-perfil::before,.a-curso::before,.a-horario::before,.a-calificaciones::before {
     width: 8px;
@@ -523,7 +523,7 @@ html {
 }
 
 .admin-color {
-    color: aqua;
+    color: rgba(0, 255, 255, 0.418);
 }
 
 .izquierda-arriba .admin-color {
