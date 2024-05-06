@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imagenes/background\(BODY\).jpg);
+    background-size: cover;
+}
+
+/* Header de las paginas que usaran todos excluyendo a las paginas index.html y problemas-al-iniciar.html */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(../imagenes/background\(BODY\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #000;
+    height: 65px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+header li {
+    width: 50px;
+    transform: translateX(22px) translateY(3px);
+
+}
+
+nav {
+    background-color: #000;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+.header-container {
+    width: 95%;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.JES {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.JES img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.JES-nom h3 {
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    border-top: 1px solid #FFF;
+    font-size: 12px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PERFIL PARA PROFESORES EDITADO */
+
+/* Contenedor para la foto de perfil */
+
+.central {
+    background-color: #000000e0;
+    color: #FFF;
+    border-radius: 10px ;
+    width: 70%;
+    height: 480px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.izquierda-arriba {
+    height: 500px ;
+    margin-top: 40px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.izquierda-arriba h5 {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+    color: #FFC93D;
+}
+.izquierda-abajo {
+    margin-top: 40px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.izquierda-abajo h6 {
+    text-align: center;
+    color: gray;
+    position: relative;
+    bottom: 20px;
+}
+
+.izquierda-abajo h4 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5px;
+}
+
+.izquierda-arriba img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 100% ;
+}
+
+.derecha-arriba {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #CCC;
+    padding-bottom: 30px;
+    /* text-align: center; */
+}
+
+.contenedor-central {
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 400px 
+}
+
+.derecha-abajo {
+    text-align: center;
+}
+
+.datos {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row;
+
+}
+
+.datos p {
+    color: #FFF;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.datos h4 {
+    color: #CCC;
+    width: 80px;
+    text-align: justify;
+}
+
+.izquierda-arriba figure {
+    border-bottom: 2px solid gray;
+    padding-bottom: 26px;
+}
+
+/* ICONO PARA EDITAR */
+
+figure .editor {
+    width: 30px;
+    height: 30px;
+}
+
+.editor {
+    position: absolute;
+    top: 150px;
+    right: 270px;
+    width: 100%;
+    height: 100%;
+}
+
+#editor_admin {
+    position: absolute;
+    top: 100px;
+    right: 280px;
+    width: 100%;
+    height: 100%;
+}
+
+figure #editor_admin {
+    width: 30px;
+    height: 30px;
+}
+/* PERFIL PARA EL ADMINISTRADOR */
+
+.central-admin {
+    background-color: #000000e0;
+    color: #FFF;
+    border-radius: 10px ;
+    width: 70%;
+    height: 440px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.izquierda-arriba_admin {
+    height: 500px ;
+    margin-top: 40px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.izquierda-arriba_admin h5 {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+    color: #FFC93D;
+}
+
+.izquierda-arriba_admin img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 100% ;
+    margin-top: 30px ;
+}
+
+.contenedor-central_admin {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 400px 
+}
+
+.derecha-abajo_admin {
+    text-align: center;
+}
+
+.izquierda-arriba_admin figure {
+    border-bottom: 2px solid gray;
+    padding-bottom: 36px;
+}
+
+/* Asignacion de Horaro para el Administrador */
+
+.contenedor-info {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 250px;
+    width: 70%;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-info p {
+    color: #FFF;
+    text-align: center;
+}
+
+.contenedor-info img {
+    height: 100px;
+    width: 100px;
+    margin: 15px 0;
+}
+
+.horizontal {
+    
+    height: 150px;
+    width: 550px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical {
+    position: absolute;
+}
+
+.flecha-regresar {
+    position: relative;
+}
+
+.flecha-regresar img {
+    width: 30px;
+    height: 30px;
+    transform: translateX(-120px) translateY(-60px);
+}
+
+.tabla-horario {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin: 0 auto;
+    color: #FFF;
+    height: 380px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.tabla-centrar {
+    padding: 50px 0;
+}
+
+.tabla-cabecera {
+    background-color: #000;
+}
+
+.tabla-horario td {
+    text-align: center;
+}
+
+.tabla-horario th {
+    background-color: #000;
+    width: 150px;
+}
+
+/* Departamentos admin y profesores */
+
+.section-secciones-container {
+    border: 0.5px solid gray;
+    width: 800px;
+    height: 400px;
+    background-color: #000;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
+.section-secciones-container article {
+    width: 98%;
+    margin: 0 auto;
+    height: 133px;
+    text-align: center;
+}
+
+.article-secciones-border {
+    border-bottom: 2px solid #FFF;
+}
+
+.section-secciones-container a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.main-departamentos-container {
+    padding-bottom: 125px;
+}
+
+.section-secciones-container h2 {
+    line-height: 120px;
+}
+
+.horizontal h4 {
+    margin-left: 10px;
+    color: gray;
+}
+.vertical h4 {
+    color: #FFF;
+}
+
+/* RESPONSIVE */
+
+/* DESKTOP */
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    
+}
+  
+/* TABLET */
+
+@media screen and (min-width: 601px ) and (max-width: 900px) {
+
+    * {
+        font-size: 14px;
+    }
+
+    .izquierda-arriba img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .central {
+        width: 300px;
+    }
+
+    .central,
+    .central-admin {
+        width: 90%;  
+        height: auto; 
+    }
+
+    .izquierda-arriba,
+    .izquierda-arriba_admin {
+        width: 60%; 
+        margin-top: 20px;
+    }
+
+    .contenedor-central,
+    .contenedor-central_admin {
+        margin-left: 0; 
+        width: 100%; 
+    }
+}
+
+/* CELULARES */
+
+@media screen and (max-width: 600px) {
+    .perfil-main {
+        padding-bottom: 60px;
+    }
+
+    .central {
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+        /* padding-bottom: 50px; */
+    } 
+
+    .izquierda-arriba figure {
+        border: none;
+        width: 150px;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .izquierda-arriba h5 {
+        position: relative;
+        left: 160px;
+        top: 40px;
+        font-size: 16px;
+    }
+
+    .izquierda-arriba img {
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+    }
+
+    .izquierda-abajo {
+        position: relative;
+        top: 80px;
+        left: 20px;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .datos {
+        font-size: 14px;
+    }
+
+    .datos p {
+        margin-left: 20px;
+    }
+
+    .derecha-arriba {
+        position: relative;
+        z-index: 3 ;
+        bottom: 110px;
+        left: 50px;
+        font-size: 14px;
+        border: none;
+        width: 180px;
+    }
+
+    .derecha-abajo {
+        position: relative;
+        right: 60px;
+        width: 300px;
+        bottom: 50px;
+    }
+
+    .contenedor-central {
+        width: 60%;
+    }
+}

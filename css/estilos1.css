@@ -1,0 +1,1347 @@
+@import url("reset.css");
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* fondo de la pagina aplicada al body del index y problemas al iniciar*/
+#index-body,#problemas-al-iniciar-body {
+    background-image: url(../imagenes/background\(BODY\)1.jpg);
+}
+
+body {
+    background-image: url(../imagenes/background\(BODY\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+/* Header de las paginas que usaran todos excluyendo a las paginas index.html y problemas-al-iniciar.html */
+header {
+    background-color: #00000049;
+    backdrop-filter: blur(30px);
+    height: 65px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 25px;
+    transform: translateX(-45%);
+}
+
+header ul {
+    display: flex;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+header li {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    transform: translateX(-50px) translateY(-22px);
+}
+
+header a {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    border-bottom: 1px solid #ffffff60;
+    width: 130px;
+    height: 30px;
+    transform: translateY(5px) translateX(-45px);
+}
+
+
+
+.menu-navegador figure img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.header-container {
+    width: 100%;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.JES {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    transform: translateX(-15%);
+}
+
+.JES img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.JES-nom {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: translateX(-30px);
+}
+
+.JES-nom h3 {
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+/* HEADER DE LAS PAGINAS HOMES */
+.home-header {
+    background-color: #0303032d; 
+    backdrop-filter: blur(40px);
+    border: none;
+}
+
+.header-home-container {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+
+.header-home-container nav {
+    position: relative; 
+    left: 42%;
+    width: 50px;
+    border: none;
+}
+
+.header-home-container .identidad figure img {
+    border-radius: 100%; 
+    margin-top: 20px;
+    width: 34px;
+    transform: translateY(-18px) translateX(-20px);
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.logo-jes-home img {
+    width: 240px;
+    height: 200px;
+    position: relative;
+    bottom: 30px;
+    right: 20px;
+}
+
+.jes-nombre-home {
+    transform: translateX(7%);
+}
+
+.jes-nombre-home h2 {
+    text-align: center; 
+    font-size: 20px;
+}
+
+/* AQUI TERMINA LOS HEADER DE LOS HOMES */
+
+/* HOMES */
+.main-container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 170px;
+}
+
+.home-article {
+    width: 340px;
+    height: 120px;
+    background-color: #000;
+    border-radius: 15px;
+    box-shadow: 2px 2px #ffc83d2d;
+    margin: 0 30px;
+    position: relative;
+    top: 90px;
+}
+
+.home-article a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    transform: translateY(20px);
+}
+
+.home-article h3 {
+    order: 1;
+    font-size: 20px;
+    line-height: 80px;
+    transform: translateX(-25px);
+}
+
+.home-article img {
+    order: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.home-admin {
+    box-shadow: 2px 2px rgba(0, 255, 255, 0.185);
+}
+
+.home-admin:hover {
+    box-shadow: 2px 2px rgba(0, 255, 255, 0.445);
+    transition: all .5s;
+}
+
+.home-article-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.jes-nombre {
+    display: none;
+}
+
+.jes-nombre h2, .jes-nombre h3{
+    color: white;
+    margin: 0 auto;    
+    text-align: center;
+    transform: translateY(-70px);
+}
+.jes-nombre h2 {
+    font-size: 20px;
+}
+
+.jes-nombre h3 {
+    font-size: 18px;
+}
+/* AQUI TERMINAN LOS HOMES */
+
+
+/* estilos para problemas-al-iniciar.html y index.html */
+#problemas-al-iniciar-main, #index-main {
+    background-color: rgba(0, 0, 0, 0.84);
+    width: 1100px;
+    height: 560px;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px gray;
+    border: 1px solid white;
+}
+
+#inicio-de-sesion {
+    width: 50%;
+}
+
+.cara-de-jes {
+    width: 40%;
+    border-right: 1px solid #FFC93D;
+}
+
+.cara-de-jes img {
+    max-width: 287px;
+    max-height: 260px;
+
+}
+
+.cara-de-jes h2 {
+    font-size: 40px;
+}
+
+.cara-de-jes h3 {
+    font-size: 30px;
+}
+
+.cara-de-jes h2, .cara-de-jes h3 {
+    margin-right: 60px;
+}
+
+.cara-de-jes-contenedor {
+    transform: translateY(-20px);
+}
+
+#inicio-de-sesion h1 {
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#inicio-de-sesion form{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cara-de-jes-contenedor{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+}
+
+.cara-de-jes img {
+    transform: translateX(-40px);
+}
+
+#id, #id:focus, #id:active, 
+#password, #password:active, #password:focus {
+    width: 320px;
+    height: 45px;
+    border-radius: 10px;
+    padding-left: 60px;
+    position: relative;
+    border: 1px solid #ffc83d2d;
+    background-color: #00000054;
+    font-size: 16px;
+    color: white;
+}
+
+#introducir-id figure {
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: inherit;
+    transform: translateX(-20px);
+}
+
+#introducir-id img {
+    width: 60%;
+    transform: translateY(-10px) translateX(-5px);
+}
+
+.problemas-al-iniciar {
+    margin-top: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+#iniciar-sesion {
+    padding: 14px 46px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #ffc83d48;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#iniciar-sesion:hover {
+    border-color: #FFC93D;
+    transition: all 0.5s;
+}
+
+.problemas-al-iniciar {
+    margin-bottom: 40px;
+}
+
+.problemas-al-iniciar:hover {
+    color: #FFC93D;
+}
+
+[href="olvido_su_id.html"]:hover {
+    color: white;
+}
+
+#introducir-contraseña img {
+    position: absolute;
+    z-index: 1;
+    width: 35px;
+    height: 40px;
+    border-radius: inherit;
+    transform: translateX(-25px) translateY(5px);
+}
+
+
+/* PROBLEMAS-AL-INICIAR.HTML */
+
+#problemas_al_iniciar {
+    width: 50%;
+    text-align: center;
+} 
+
+#problemas_al_iniciar h1 {
+    font-size: 30px;
+    color: #FFC93D;
+}
+
+#parrafo-de-soporte {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.volver-atras {
+    padding: 12px 60px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #ffc83d48;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.volver-atras:hover{
+    background-color: #000000de;
+    backdrop-filter: blur(30px);
+    border-color: #FFC93D;
+    transition: all 0.5s;
+}
+
+
+/* a-formulario de registro estudiantes */
+
+
+.selector {
+    border-radius: 20px;
+    margin: 0 auto;
+    height: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selector-alt {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#select {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    width: 120px;
+    height: 60px;
+    border-radius: 20px;
+    margin-left: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla-registro {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 15px;
+    width: 1150px;
+    height: 550px;
+    text-align: center;
+    
+}
+
+.tabla-registro td {
+    background-color: #000;
+}
+
+.tabla-registro td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    transform: translateY(20px);
+}
+
+/* FORMULARIO DE REGISTRO ADMIN */
+
+.subir-imagen-registro input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.form-container label {
+    color: rgb(47, 172, 172);
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subir-imagen-registro label {
+    border: 1px solid white; 
+    background-color: #000000d2;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    right: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100px;
+    padding: 42px 0;
+    border-radius: 100%;
+}
+
+.subir-imagen-registro label:hover {
+    box-shadow: 2px 2px gray;
+    transition: all .3s;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.706);
+    margin: 0 auto;
+    width: 80%;
+    height: 480px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    border-radius: 10px;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+}
+
+.form-container legend {
+    color:white; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+.formulario-de-registro {
+    width: 30%;
+    margin: 10px 0;
+    margin-left: 10px;
+} 
+
+.formulario-de-registro input, .formulario-de-registro select {
+    border: none;
+    border-radius: 2px;
+    border-bottom: 1px solid #fff;
+    background-color: #ffffff00;
+    color: white;
+    width: 70%;
+    height: 30px;
+    padding: 0 5px;
+}
+
+.formulario-de-registro select:focus{
+    background-color: #0f1113;
+    color: white;
+}
+
+.submit-registro {
+    flex-basis: 40%;
+    margin: 0 auto;
+}
+
+.submit-registro input {
+    background-color: black;
+    border: 1px solid rgb(47, 172, 172);
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 60%;
+    height: 30px;
+    margin-left: 60px;
+}
+
+/* Flecha regresar registro */
+
+.regresar-registro {
+    width: 20px; 
+    position: relative; 
+    left: 5px; 
+    top: 15px;
+    z-index: 3;
+    transform: translateX(-130px);
+}
+
+.regresar-registro img {
+    width: 30px; 
+    height: 30px;
+}
+/* AQUI TERMINA EL FORMULARIO DE REGISTRO */
+
+.menu{
+    position: relative;
+    top: 18px;
+    left: 40px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+    transform: translateX(-10px) translateY(5px);
+}
+
+.header-home-container .bar{
+    height: 4px;
+    width: 26px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+}
+
+/* E-CALIFICACIONES */
+.tabla-calificacion th {
+    height: 10px;
+    background-color: #000;
+    border-left: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+
+.tabla-calificacion-centrar {
+    width: 70%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 10px;
+    height: 325px;
+    padding-top: 10px;
+}
+
+.tabla-centrar {
+    padding: 65px 0;
+}
+
+.tabla-calificacion {
+    margin: 0 auto;
+    color: #FFF;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.tabla-calificacion td, .tabla-calificacion th {
+    min-width: 160px;
+    padding: 20px 0;
+    border-radius: inherit;
+}
+
+.tabla-calificacion td {
+    background-color: rgba(0, 0, 0, 0.849);
+    border-left: 1px solid rgba(255, 255, 255, 0.103);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+    border-top: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+.tabla-calificacion td:hover {
+    background-color: #ffc83d60;
+    backdrop-filter: blur(20px);
+}
+
+.botones-container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    position: absolute;
+    top: 300px;
+    left: 10%;
+    right: 10%;
+    z-index: 0;
+}
+
+.botones-container * {
+    padding: 36px 10px;
+    border: none;
+    background-color: #000000d2;
+    backdrop-filter: blur(5px);
+    color: #ffc83db6;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.botones-container *:hover {
+    color: #fff;
+    background-color: #ffc83d60;
+}
+
+#scroll-izquierdo {
+    border-radius: 5px 0 0 5px;
+}
+
+#scroll-derecho {
+    border-radius: 0 5px 5px 0;
+}
+
+/* Pantallas emergentes con sweetAlertm, estilos: */
+.emergente-class {
+    background-color: #000000d2;
+    /* backdrop-filter: blur(30px); */
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px rgba(255, 255, 255, 0.123);
+}
+
+.classes-eme {
+    width: 200px;
+}
+
+.confirm-eme {
+    background-color: black;
+    border: 1px solid #FFC93D;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.confirm-eme:hover {
+    background-color: #ffc83d4f;
+    border: none;
+}
+
+.container-eme {
+    backdrop-filter: blur(35px);
+}
+
+.conta-eme {
+    backdrop-filter: blur(10px);
+}
+
+/* MENU NAVEGADOR EMERGENTE */
+.menu-navegador-eme * {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.menu-navegador-eme a {
+    border: none;
+    color: #FFC93D;
+}
+
+/* Responsive */
+
+/* Dispositivos móviles con una anchura de pantalla de hasta 600px */
+@media screen and (max-width: 600px) {
+
+    #index-main, #problemas-al-iniciar-main {
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin-top: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .cara-de-jes img {
+        position: relative;
+        top: 16px;
+        left: 35px;
+        width: 140px;
+        height: 140px;
+        margin-top: 10px;
+    }
+    .cara-de-jes h2, .cara-de-jes h3 {
+        display: none;
+    }
+    .cara-de-jes {
+        border: none;
+        width: 100%;
+    }
+    #inicio-de-sesion {
+        width: 100%;
+    }
+    #inicio-de-sesion h1 {
+        font-size: 26px;
+    }
+    #id, #id:focus, #id:active, 
+    #password, #password:active, #password:focus 
+    {
+        max-width: 100%;
+    }
+
+    #iniciar-sesion {
+        padding: 14px 20px;
+    }
+    .problemas-al-iniciar {
+        font-size: 14px;
+    }
+    #introducir-id img, #introducir-contraseña img {
+        margin-top: 3px;
+        width:30px;
+        height: 30px;
+    }
+    #introducir-contraseña, #introducir-id {
+        width: 60%;
+        margin-right: 60px;
+    }
+    /* Problemas al iniciar */
+    #problemas_al_iniciar{
+        width: 100%;
+    }
+    #problemas_al_iniciar h1 {
+        font-size: 22px;
+    }
+    #parrafo-de-soporte {
+        width: 98%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .volver-atras {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
+    /* HOME */
+    .home-header {
+        border: none;
+    }
+
+    .menu-navegador {
+        width: 50px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        box-shadow: none;
+    }
+
+    .header-home-container {
+        width: 100%;
+        /* background-color: #000; */
+        transform: translateX(-20px);
+    }
+
+    .logo-jes-home img {
+        width: 160px;
+        height: 140px;
+        margin-bottom: 0;
+        transform: translateY(40px) translateX(20px);
+    }
+    .jes-nombre {
+       transform: translateY(64px);
+       display: inline-block;
+    }
+    .jes-nombre h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        display: none;
+    }
+    .jes-nombre h3 {
+        color: #fff;
+        font-size: 12px;
+        
+    }
+    .identidad figcaption {
+        font-size: 12px;
+        position: relative;
+        right: 8px;
+    }
+
+    .identidad img {
+        width: 34px;
+        margin-bottom: 5px;
+    }
+    
+    .identidad {
+        position: relative;
+        right: 20px;
+    }
+    .main-container-home {
+        overflow: hidden;
+    }
+
+    .home-article-container {
+        flex-flow: column;
+        gap: 10px;
+        transform: translateY(-30px);
+    }
+
+    .home-article {
+        box-shadow: 1px 1px #FFC93D;
+        border: 1px solid rgba(128, 128, 128, 0.268);
+        border-radius: 10px;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: 10%;
+    }
+
+    .home-article img {
+        width: 30px;
+        height: 30px;
+        transform: translateY(-20px) translateX(10px); 
+    }
+
+    .home-article h3 {
+        font-size: 16px;
+        transform: translateY(-20px) translateX(-20px);
+    }
+
+    .home-admin {
+        box-shadow: 1px 1px rgba(0, 255, 255, 0.582);
+    }
+    /* termina el home */
+
+    /* Formulario de registro */
+    .subir-imagen-registro label {
+        flex-basis: 100%;
+        padding: 20px 30px;
+        position: relative;
+        right: 40px;
+        border-radius: 10px;
+        margin-bottom: 20px;      
+        margin-top: 45px;
+        margin-left: 20%;
+    }
+    header {
+        overflow: hidden;
+        /* border-bottom: 1px solid white; */
+        margin-bottom: 0;
+    }
+    
+    .header-container {
+        background-color: #0000006c;
+        height: 100%;
+        width: 100%;
+    }
+    .header-container h1 {
+        font-size: 20px;
+        transform: translateX(-60px);
+        margin-top: 4px; 
+        
+    }
+    .header-container nav {
+        width: 25px;
+        height: 25px;
+        background-color: #00000000;
+        border: none;
+        position: relative;
+        left: 8%;
+    }
+    .header-container nav img {
+        width: 20px;
+        height: 20px;
+    }
+    .header-container h2, .header-container h3 {
+        display: none;
+    }
+    .mobile-none {
+        display: none;
+    }
+    .JES img {
+        width: 50px;
+        height: 40px;
+        transform: translateX(-30px);
+    }
+    .form-container {
+        background-color: rgba(0, 0, 0, 0);
+        height: 100%;
+        width: inherit;
+        flex-flow: column;
+        align-items: center;
+        border-radius: 0;
+    }
+    .form-container legend {
+        font-size: 14px;
+        font-style: italic;
+        margin-left: 30px;
+        transform: translateY(30px) translateX(20px);
+    }
+    .formulario-de-registro {
+        width: 90%;
+        margin-left: 20%;
+    }
+    .subir-imagen-registro {
+        flex-basis: 100%;
+    }
+
+    .submit-registro {
+        flex-basis: 100%;
+        margin-right: 70px;
+    }
+
+    .regresar-registro {
+        position: absolute;
+        top: 98px;
+        left: 2px;
+        transform: translateX(-20px) translateY(-27px);
+    }
+
+    .form-main {
+        background-color: rgba(0, 0, 0, 0.706);
+        height: 972px;
+        padding-bottom: 10px;
+        overflow: hidden;
+    }
+    /* aqui termina el formulario de registro */
+
+    /* E-CALIFICACIONES */
+    .tabla-calificacion-centrar{
+        width: 98%;
+        overflow-x: scroll;
+    }
+
+    .tabla-calificacion {
+        border-radius: none;
+        
+    }
+
+    .tabla-calificacion td, .tabla-calificacion th {
+        min-width: 100px;
+        padding: 20px 10px;
+        border-radius: none;
+    }
+
+    .botones-container {
+        width: 60%;
+        margin-top: 10px;
+        top: 75%;
+        margin: 0 auto;
+        border-radius: 10px;
+        justify-content: space-around;
+    }
+
+    .botones-container * {
+        padding: 10px;
+    }
+    /* TERMINA E-CALIFCACIONES */
+}
+
+/* Tablets con una anchura de pantalla de 601px a 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Estilos para tablets */
+    #problemas-al-iniciar-main, #index-main {
+        background-color: rgba(0, 0, 0, 0.84);
+        max-width: 640px;
+        max-height: 400px;
+        margin-top: 50px;
+        color: white;
+        display: flex;
+        border-radius: 20px;
+    }
+    #inicio-de-sesion h1 {
+        font-size: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #inicio-de-sesion form{
+        position: relative;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #id, #id:focus, #id:active, 
+    #password, #password:active, #password:focus
+    {
+        width: 200px;
+        height: 40px;
+        padding: 0;
+        padding-left: 50px;
+    }
+    .cara-de-jes img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .cara-de-jes h2 {
+        font-size: 22px;
+    }
+    .cara-de-jes h3 {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    #introducir-contraseña img, #introducir-id img {
+        width: 30px;
+        height: 30px;
+    }
+    #introducir-contraseña img {
+        transform: translateX(-30px) translateY(5px);
+    }
+    #introducir-id img {
+        transform: translateX(-5px) translateY(-10px);
+    }
+    .problemas-al-iniciar {
+        font-size: 12px;
+    }
+    #iniciar-sesion {
+        padding: 12px 25px;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+    #problemas_al_iniciar h1 {
+        font-size: 26px;
+    }
+    #parrafo-de-soporte {
+        position: relative;
+        left: 10%;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    /* Homes */
+    .menu-navegador {
+        height: 26px;
+        width: 122px;
+    }
+    .menu-navegador img {
+        width: 22px;
+        position: relative;
+        bottom: 2px;
+        right: 3px;
+    }
+
+    .logo-jes-home img {
+        width: 200px;
+        height: 180px;
+        bottom: 40px;
+        left: 12px;
+    }
+
+    .main-container-home {
+        padding-bottom: 120px;
+    }
+
+    .header-home-container {
+        width: 96%;
+        margin-right: 20px;
+    }
+    .home-article {
+        width: 39.933444%; /* 240px/601 */
+        height: 80px;
+        border-radius: 10px;
+        margin: 0 26px;
+        position: relative;
+        top: 80px;
+    }
+
+    .home-article a {
+        color: white;
+        margin-right: 40px;
+        position: relative;
+        bottom: 21px;
+    }
+
+    .home-article h3 {
+        order: 1;
+        font-size: 18px;
+        line-height: 80px;
+        transform: translateX(-25px);
+    }
+    .home-article img {
+        order: 0;
+        width: 34px;
+        height: 34px;
+    }
+    .home-admin {
+        box-shadow: 2px 2px rgba(0, 255, 255, 0.322);
+    }
+
+    .jes-nombre-home h3{
+        font-size: 14px;
+    }
+
+    .jes-nombre-home h2 {
+        font-size: 12px;
+    }
+
+    /* Formulario registro */
+    .header-container {
+        width: 98%;
+    }
+    .JES {
+        transform: translateX(-30px);
+    }
+    .header-container h1 {
+        font-size: 22px;
+        transform: translateX(-40px);
+    }
+    .JES h2 {
+        font-size: 14px;
+    }
+    
+    .JES h3 {
+        font-size: 10px
+    }
+
+    .form-container {
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 85%;
+    }
+    .form-container * {
+        margin-left: 15px;
+    }
+    .form-container input {
+        padding: 0 10px;
+        margin: 0 5px;
+    }
+    .form-container legend {
+        transform: translateX(-30px);
+    }
+    .submit-registro {
+        flex-basis: 60%;
+        position: relative;
+        left: 30%;
+    }
+
+    .subir-imagen-registro label {
+        transform: translateX(30px);
+    }
+
+    .regresar-registro {
+        transform: translateX(-55px) translateY(-12px);
+    }
+}
+
+/* Computadoras de escritorio con una anchura de pantalla de 901px en adelante */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    #problemas-al-iniciar-main, #index-main {
+        background-color: rgba(0, 0, 0, 0.84);
+        width: 80%;
+        height: 460px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        display: flex;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px gray;
+        border: 1px solid white;
+    }
+    #inicio-de-sesion h1 {
+        font-size: 25px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #inicio-de-sesion form{
+        position: relative;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #id, #id:focus, #id:active, 
+    #password, #password:active, #password:focus 
+    {
+        width: 280px;
+        height: 50px;
+        padding: 0;
+        padding-left: 50px;
+    }
+    .cara-de-jes img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+    }
+    .cara-de-jes h2 {
+        font-size: 22px;
+    }
+    .cara-de-jes h3 {
+        font-size: 20px;
+    }
+    #introducir-contraseña img, #introducir-id img {
+        width: 30px;
+        height: 30px;
+    }
+    #introducir-contraseña img {
+        transform: translateX(-30px) translateY(10px);
+    }
+    #introducir-id img {
+        transform: translateX(-6px) translateY(-5px);
+    }
+    .problemas-al-iniciar {
+        font-size: 14px;
+    }
+    #iniciar-sesion {
+        padding: 14px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    #problemas_al_iniciar h1 {
+        font-size: 26px;
+    }
+    #parrafo-de-soporte {
+        position: relative;
+        left: 10%;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    /* Formulario */
+    .form-container {
+        width: 90%;
+    }
+
+    .form-container * {
+        margin-left: 10px;
+    }
+
+    .submit-registro {
+        flex-basis: 60%;
+        margin-left: 25%;
+    }
+
+    .regresar-registro {
+        transform: translateY(-10px) translateX(-90px);
+    }
+
+    .form-container legend {
+        transform: translateX(-10px);
+    }
+}
+
