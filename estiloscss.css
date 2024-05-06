@@ -61,13 +61,14 @@ html {
     background-color: rgba(0, 0, 0, 0.416);
     backdrop-filter: blur(10px);
     max-width: 16%;
-    max-height: 45vh;
-    border-radius: 0px 30px 30px 0px;
+    max-height: 50vh;
+    border-radius: 0px 10px 10px 0px;
     /* position: relative; */
-    top: 30%;
+    /* top: 30%; */
     bottom: 50%;
     overflow: hidden;
     padding: 10px 0;
+    padding-bottom: 100px;
     /* margin-top: 8%; */
 }
 
@@ -79,7 +80,7 @@ html {
     color: #FFC93D;
     background-color: rgba(0, 0, 0, 0.318);
     margin-bottom: 12px;
-    height: 5vh;
+    height: 6vh;
     margin-top: 12px;
     border-radius: inherit;
 }
@@ -109,7 +110,7 @@ html {
 
 .nav-current {
     background-color: #ffc83d3e;
-    border-radius: 0px 20px 20px 0;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .nav-current h3 {
@@ -446,3 +447,40 @@ html {
 }
 
 /* Aqui termina las tablas horario y calificaciones */
+
+/* Menu desplegable */
+
+.classes-eme {
+    background-color: rgba(0, 0, 0, 0.596);
+    backdrop-filter: blur(30px);
+    width: 300px;
+    height: 200px;
+    border-radius: 0 10px 0 10px;
+    margin-right: 2px;
+}
+
+.classes-eme li {
+    margin-bottom: 10px;
+}
+
+.a-eme {
+    color: #ffc83da7;
+    text-decoration: none;
+}
+
+.a-eme:hover {
+    color: white;
+    transition: 0.7s;
+}
+
+.classes-eme li::before {
+    content: url(imagenes/iconos/ajuste.svg);
+    margin-right: 5px;
+}
+
+.cerrar-eme:hover {
+    color: red;
+    transition: 0.7s;
+}
+
+/* Termina aqui el menu */
