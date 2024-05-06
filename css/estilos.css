@@ -1,90 +1,138 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-/* ESTO SE APLICARA PARA TODAS LA PAGINAS ENLAZADAS A ESTE ARCHIVO CSS */
+@import url(./css/reset.css);
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: url(../imagenes/background\(BODY\).jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 
-header {
-    background-color: #000;
-    height: 65px;
-    width: 100%;
-    margin-bottom: 40px;
+html {
+    height: 100%;
 }
 
-header h1 {
-    font-size: 25px;
-}
-
-header ul {
+.main-container-home {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
-    margin-right: 40px;
+    margin-top: 5%;
 }
 
-header li {
-    width: 50px;
-    transform: translateX(22px) translateY(3px);
-
+/* HEADER DE LAS PAGINAS HOMES */
+.head-h1 {
+    font-size: 22px;
+    font-style: italic;
+}
+.home-header {
+    background-color: rgba(0, 0, 0, 0.416);
+    backdrop-filter: blur(20px);
+    /* border: none; */
 }
 
-nav {
-    background-color: #000;
-    width: 150px;
-    height: 30px;
-    border-radius: 20px;
-    border: 1px solid #fff;
+.jes-nombre-home h2 {
+    text-align: center; 
+    font-size: 20px;
 }
 
-.header-container {
-    width: 95%;
-    height: 63px;
+.header-home-container {
     display: flex;
+    height: 60px;
     align-items: center;
     justify-content: space-between;
     color: white;
-    margin-bottom: 10px;
+    width: 100%;
 }
 
-.JES {
+.header-form figure {
+    width: 60px;
+    height: 50px;
+}
+.header-form img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* AQUI TERMINA LOS HEADER DE LOS HOMES */
+
+/* DISEÑO DEL NAV */
+
+.home-nav-container {
+    background-color: rgba(0, 0, 0, 0.416);
+    backdrop-filter: blur(10px);
+    max-width: 16%;
+    max-height: 50vh;
+    border-radius: 0px 10px 10px 0px;
+    /* position: relative; */
+    /* top: 30%; */
+    bottom: 50%;
+    overflow: hidden;
+    padding: 10px 0;
+    padding-bottom: 100px;
+    /* margin-top: 8%; */
+}
+
+.nav-li-lateral a{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
+    text-decoration: none;
+    color: #FFC93D;
+    background-color: rgba(0, 0, 0, 0.318);
+    margin-bottom: 12px;
+    height: 6vh;
+    margin-top: 12px;
+    border-radius: inherit;
+}
+
+.a-perfil::before {
+    content: url(imagenes/iconos/usuario.svg);
+}
+.a-curso::before {
+    content: url(imagenes/iconos/curso.svg);
+}
+.a-horario::before {
+    content: url(imagenes/iconos/horario.svg);
+}
+.a-calificaciones::before {
+    content: url(imagenes/iconos/libro.svg);
+}
+.a-perfil::before,.a-curso::before,.a-horario::before,.a-calificaciones::before {
+    width: 8px;
+    height: 8px;
+    transform: translateY(-10px);
+    margin:0 10px;
+}
+
+.nav-li-lateral a h3 {
+    margin-left: 15px;
+}
+
+.nav-current {
+    background-color: #ffc83d3e;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.nav-current a {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-current h3 {
     color: white;
 }
 
-.JES img {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
+
+.logo-jes {
+    width: 50%;
+    /* height: 50px; */
 }
 
-.JES-nom h3 {
-    font-size: 12px;
-    margin-top: 1px;
+.logo-jes img {
+    width: 100%
 }
 
-footer {
-    background-color: #000;
-    color: #FFF;
-    border-top: 1px solid #FFF;
-    font-size: 12px;
-    height: 20px;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#li-admin {
+    background-color: rgba(0, 255, 255, 0.24);
 }
 
 /* a_ayuda-soporte */
