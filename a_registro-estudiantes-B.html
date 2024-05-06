@@ -23,44 +23,53 @@
 </head>
 <body>
     <!-- Usamos el header -->
-    <header>
-        <div class="header-container">
-            <div class="JES">
-                <figure>
-                    <img src="imagenes/recursos/logo-jes.png" alt="logo-jes">
-                </figure>
-                <div class="JES-nom">
-                    <h2>JES</h2>
-                    <h3>Junior Explorers System</h3>    
-                </div>
+    <header class="home-header">
+        <div class="header-home-container">
+            <div class="mobile-none jes-nombre-home">
+                <h2>JES</h2>
+                <h3>Junior Explorers System</h3>
             </div>
-            <h1>Registro</h1>
-                <nav class="menu-navegador">
-                    <ul>
-                        <li>
-                            <figure>
-                                <a href="a-home.html">
-                                    <img src="imagenes/iconos/home.svg" alt="icono-home">
-                                </a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="imagenes/iconos/usuario.svg" alt="icono-usuario">
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="imagenes/iconos/menu.svg" alt="icono-menu">
-                            </figure>
-                        </li>
-                    </ul>
-                </nav>            
+            <nav class="menu-navegador">
+                <ul>
+                    <li class="menu">
+                        <figure>
+                            <img src="imagenes/iconos/menu.svg" alt="menu-desplegable">
+                        </figure>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main>
-        <!-- Usamos un selector para alternar entre estudiantes y profesor -->
-        <div class="selector">
+    <main class="main-container-home">
+            <nav class="home-nav-container">
+                <figure class="logo-jes">
+                    <img src="imagenes/recursos/logo-jes.png" alt="logo-jes">
+                </figure>
+                <ul class="nav-ul-lateral">
+                    <li class="nav-li-lateral li-perfil nav-current">
+                        <a href="#" class="a-perfil">                            
+                            <h3>Perfil</h3>
+                        </a>
+                    </li>
+                    <li class="nav-li-lateral li-curso">
+                        <a href="#" class="a-curso">                            
+                            <h3>Listado</h3>
+                        </a>
+                    </li> 
+                    <li class="nav-li-lateral li-horario">
+                        <a href="e-horario.html" class="a-horario">                            
+                            <h3>Horario</h3>
+                        </a>
+                    </li>
+                    <li class="nav-li-lateral li-calificaciones">
+                        <a href="e-calificaciones.html" class="a-calificaciones">                            
+                            <h3>Calificaciones</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        <section class="central">
+            <div class="selector">
             <div class="selector-alt">
                 <a href="a_registro-estudiantes-B.html" class="current"><span>Estudiante</span></a>
                 <a href="a_registro-profesores-B.html" class="current">Profesor</a>
