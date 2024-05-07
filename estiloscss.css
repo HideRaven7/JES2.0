@@ -55,6 +55,7 @@ html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.416);
     width: 84%;
+    overflow: hidden;
 }
 
 
@@ -482,3 +483,56 @@ html {
 }
 
 /* Termina aqui el menu */
+
+/* CURSOS */
+.curso-container {
+    border: 1px solid red;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info-p {
+    border: 1px solid purple;
+    color: white;
+    background-color: #0000007b;
+    backdrop-filter: blur(10px);
+    /* text-align: center; */
+}
+
+.identidad-profesor {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.info-p img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.info-e {
+    border: 1px solid orange;
+}
+.info-e table {
+    border: 1px solid black;
+    width: 100%;
+    background-color: #0000007b;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+.info-e legend {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info-e th {
+    width: 100px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+/* Termina cursos */
