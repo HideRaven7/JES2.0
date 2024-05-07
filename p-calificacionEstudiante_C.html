@@ -9,73 +9,66 @@
 </head>
 <body>
     <!-- pagina de calificaciones para estudiantes -->
-    <header>
-        <div class="header-container">
-            <div class="JES">
-                <figure>
+    <div class="body-container">
+        <header class="home-header">
+            <nav class="home-nav-container">
+                <figure class="logo-jes">
                     <img src="imagenes/recursos/logo-jes.png" alt="logo-jes">
                 </figure>
-                <div class="JES-nom">
-                    <h2>JES</h2>
-                    <h3>Junior Explorers System</h3>    
-                </div>
-            </div>
-            <h1>Calificaciones</h1>
-                <nav class="menu-navegador">
-                    <ul>
-                        <li>
-                            <figure>
-                                <a href="p-home.html">
-                                    <img src="imagenes/iconos/home.svg" alt="icono-home">
-                                </a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="p-perfil.html">
-                                    <img src="imagenes/iconos/usuario.svg" alt="icono-usuario">
-                                </a>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="imagenes/iconos/menu.svg" alt="icono-menu">
-                            </figure>
-                        </li>
-                    </ul>
-                </nav>            
-        </div>
-    </header>
-    <main>
-        <section class="contenedor-info">
-            <figure class="flecha-regresar">
-                <a href="p_calificacion-seccionC.html">
-                    <img src="imagenes/iconos/flecha-regresar.svg" alt="regresar">
-                </a>
-            </figure>
-            <div class="horizontal">
-                <article>
-                    <h4>Nombre</h4>
-                    <p>Emmy Maria</p>
-                </article>
-                <article>
-                    <h4>Apellidos</h4>
-                    <p>Garcia Paulino</p>
-                </article> 
-            </div>
-            <div class="vertical">
-                <article>
-                    <h4>#45-031-10</h4>
-                </article>
-                <figure>
-                    <img src="imagenes/recursos/perfil.Profesor.png" alt="pefil">
+                <ul class="nav-ul-lateral">
+                    <li class="nav-li-lateral li-perfil nav-current">
+                        <a href="#p-home.html" class="a-perfil a-before">                            
+                            <h3>Perfil</h3>
+                        </a>
+                    </li>
+                    <li class="nav-li-lateral li-curso">
+                        <a href="p-curso.html" class="a-curso a-before">                            
+                            <h3>Listado</h3>
+                        </a>
+                    </li> 
+                    <li class="nav-li-lateral li-horario">
+                        <a href="p-horario.html" class="a-horario a-before">                            
+                            <h3>Horario</h3>
+                        </a>
+                    </li>
+                    <li class="nav-li-lateral li-calificaciones">
+                        <a href="p-calificaciones.html" class="a-calificaciones a-before">                            
+                            <h3>Calificaciones</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contenedor-info">
+                <figure class="flecha-regresar">
+                    <a href="p_calificacion-seccionC.html">
+                        <img src="imagenes/iconos/flecha-regresar.svg" alt="regresar">
+                    </a>
                 </figure>
-                <article>
-                    <h4>1ro-A</h4>
-                </article>
-            </div>
-        </section>
-        <section class="tabla-centrar tabla-calificacion-centrar">
+                <div class="horizontal">
+                    <article>
+                        <h4>Nombre</h4>
+                        <p>Emmy Maria</p>
+                    </article>
+                    <article>
+                        <h4>Apellidos</h4>
+                        <p>Garcia Paulino</p>
+                    </article> 
+                </div>
+                <div class="vertical">
+                    <article>
+                        <h4>#45-031-10</h4>
+                    </article>
+                        <figure>
+                            <img src="imagenes/recursos/perfil.Profesor.png" alt="pefil">
+                        </figure>
+                    <article>
+                        <h4>1ro-A</h4>
+                    </article>
+                </div>    
+            </section>
+            <section class="tabla-centrar tabla-calificacion-centrar">
                <table class="tabla-horario tabla-calificacion">
                    <tr class="tabla-cabecera">
                         <th>Calificaciones</th>
@@ -126,7 +119,8 @@
                         <td class="nota-final">96</td>
                    </tr>
                </table>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
