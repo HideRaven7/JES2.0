@@ -492,22 +492,31 @@ html {
 }
 
 .info-p {
-    /* border: 1px solid purple; */
     color: white;
     height: auto;
+    margin: 0 auto;
     background-color: #0000007b;
     backdrop-filter: blur(10px);
-    border-radius: 5px 5px 0px 0;
+    border-radius: 5px 5px 5px 5px;
     display: flex;
-    /* text-align: center; */
+    width: 60%;
 }
 
 .identidad-profesor {
     width: 60%;
-    height: 40%;
-    border: 2px solid white;
+    height: 60%;
+    border: 1px solid white;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
+    margin-right: 60px;
+    /* flex-direction: column; */
+}
+
+.identidad-profesor h4 {
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: #FFC93D;
 }
 
 .info-p img {
@@ -516,6 +525,15 @@ html {
     border-radius: 100%;
     object-fit: cover;
     text-align: center;
+}
+
+.nom_ape-p {
+    display: flex;
+    transform: translateX(-25px);
+}
+
+.nom_ape-p * {
+    margin-right: 10px;
 }
 
 .info-e {
@@ -536,8 +554,18 @@ html {
 
 .info-e th {
     width: 100px;
-    padding: 5px 0;
+    /* padding: 5px 0; */
     border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.estudiante-img figure {
+    width: 40px;
+    height: 40px;
+}
+
+.estudiante-img img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Termina cursos */
