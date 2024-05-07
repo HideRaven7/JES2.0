@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones de Estudiantes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="imagenes/recursos/logo-jes.png">
+</head>
+<body>
+    <!-- Usamos el header -->
+    <header class="home-header">
+        <div class="header-home-container">
+            <div class="mobile-none jes-nombre-home">
+                <h2>JES</h2>
+                <h3>Junior Explorers System</h3>
+            </div>
+            <nav class="menu-navegador">
+                <ul>
+                    <li class="menu">
+                        <figure>
+                            <img src="imagenes/iconos/menu.svg" alt="menu-desplegable">
+                        </figure>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-container-home">
+            <nav class="home-nav-container">
+                <figure class="logo-jes">
+                    <img src="imagenes/recursos/logo-jes.png" alt="logo-jes">
+                </figure>
+                <ul class="nav-ul-lateral">
+                    <li class="nav-li-lateral li-perfil">
+                        <a href="#" class="a-perfil">                            
+                            <h3>Perfil</h3>
+                        </a>
+                    </li>
+                    <li class="nav-li-lateral li-curso">
+                        <a href="#" class="a-curso">                            
+                            <h3>Listado</h3>
+                        </a>
+                    </li> 
+                    <li class="nav-li-lateral li-horario">
+                        <a href="e-horario.html" class="a-horario">                            
+                            <h3>Horario</h3>
+                        </a>
+                    </li>
+                    <li class="nav-li-lateral li-calificaciones">
+                        <a href="e-calificaciones.html" class="a-calificaciones">                            
+                            <h3>Calificaciones</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="central">
+                <!-- Usamos un selector para alternar entre estudiantes y profesores -->
+                <div class="selector">
+                    <div class="selector-alt">
+                        <a href="a_registro-estudiantes-B.html" class="current">Estudiante</a>
+                        <a href="a_registro-profesores-B.html" class="current"><span>Profesor</span></a>
+                    </div>
+                    <form class="select-calificacion">
+                        <select name="secciones" id="select-calificacion">
+                            <option value="">1ro A</option>
+                            <option value="">2do A</option>
+                            <option value="">3ro A</option>
+                            <option value="">4to A</option>
+                            <option value="">5to A</option>
+                            <option value="">6to A</option>
+                        </select>
+                    </form>
+                </div>
+                <section style="padding-bottom: 10px;">
+                    <table class="tabla-registro">
+                        <tr>
+                            <!-- Creamos los titulos de la tabla -->
+                            <th>Perfil</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>ID</th>
+                            <th>Edad</th>
+                            <th>Email</th>
+                        </tr>
+                        <!-- Creamos las filas donde contendrán la información -->
+                        <tr>
+                            <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
+                            <td>Juana</td>
+                            <td>Rodriguez</td>
+                            <td>#12-031-10</td>
+                            <td>12</td>
+                            <td>juanita2024@gmail.com</td>
+                            <td><a href="p-calificacionEstudiante.html"><figure><img src="imagenes/iconos/Nota.svg" alt="" class="editar editar-nota"></figure></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
+                            <td>Juana</td>
+                            <td>Rodriguez</td>
+                            <td>#12-031-10</td>
+                            <td>12</td>
+                            <td>juanita2024@gmail.com</td>
+                            <td><a href="#p_calificacionEstudiante.html"><figure><img src="imagenes/iconos/Nota.svg" alt="" class="editar"></figure></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
+                            <td>Juana</td>
+                            <td>Rodriguez</td>
+                            <td>#12-031-10</td>
+                            <td>12</td>
+                            <td>juanita2024@gmail.com</td>
+                            <td><a href="#p_calificacionEstudiante.html"><figure><img src="imagenes/iconos/Nota.svg" alt="" class="editar"></figure></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
+                            <td>Juana</td>
+                            <td>Rodriguez</td>
+                            <td>#12-031-10</td>
+                            <td>12</td>
+                            <td>juanita2024@gmail.com</td>
+                            <td><a href="#p_calificacionEstudiante.html"><figure><img src="imagenes/iconos/Nota.svg" alt="" class="editar"></figure></a></td>
+                        </tr>
+                    </table>
+                </section>
+        </section>
+    </main>
+</body>
+</html>
