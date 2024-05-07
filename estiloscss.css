@@ -546,14 +546,17 @@ html {
     backdrop-filter: blur(10px);
     color: white;
 }
-.info-e legend {
+
+.color-amarillo {
     border-bottom: 1px solid rgba(255, 255, 255, 0.171);
     text-align: center;
     margin-top: 20px;
+    color: #FFC93D;
+    padding-bottom: 5px;
 }
 
 .info-e th {
-    width: 100px;
+    width: 10%;
     /* padding: 5px 0; */
     border-bottom: 1px solid rgba(255, 255, 255, 0.171);
 }
@@ -566,6 +569,10 @@ html {
 .estudiante-img img {
     width: 100%;
     object-fit: cover;
+}
+
+.estudiante-current {
+    background-color: #ffc83d27;
 }
 
 /* Termina cursos */
