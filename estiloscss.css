@@ -1,5 +1,13 @@
 @import url(./css/reset.css);
 
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
     background-image: url(../imagenes/background\(BODY\).jpg);
     background-size: cover;
@@ -13,17 +21,21 @@ html {
     height: 100%;
 }
 
+.main-container-home {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
 /* HEADER DE LAS PAGINAS HOMES */
 .head-h1 {
     font-size: 22px;
     font-style: italic;
 }
 .home-header {
-    background-color: #000000d2;
-    backdrop-filter: blur(10px);
-    max-width: 16%;
-    min-width: 16%;
-    height: 100%;
+    background-color: rgba(0, 0, 0, 0.416);
+    backdrop-filter: blur(20px);
+    /* border: none; */
 }
 
 .jes-nombre-home h2 {
@@ -51,19 +63,21 @@ html {
 
 /* AQUI TERMINA LOS HEADER DE LOS HOMES */
 
-.main-container-home{
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.416);
-    width: 84%;
-    overflow: hidden;
-}
-
-
 /* DISEÑO DEL NAV */
 
-.body-container {
-    display: flex;
-    height: 100%;
+.home-nav-container {
+    background-color: rgba(0, 0, 0, 0.416);
+    backdrop-filter: blur(10px);
+    max-width: 16%;
+    max-height: 50vh;
+    border-radius: 0px 10px 10px 0px;
+    /* position: relative; */
+    /* top: 30%; */
+    bottom: 50%;
+    overflow: hidden;
+    padding: 10px 0;
+    padding-bottom: 100px;
+    /* margin-top: 8%; */
 }
 
 .nav-li-lateral a{
@@ -128,7 +142,7 @@ html {
 #li-admin {
     background-color: rgba(0, 255, 255, 0.24);
 }
-/* TERMINACION DEL CODDIGO DEL DISEÑO DEL NAV */
+/* TERMINACIÓN DEL CODIGO DEL DISEÑO DEL NAV */
 
 /* ------------------------------------------------ */
 .subir-imagen-registro input[type="file"] {
@@ -232,13 +246,10 @@ html {
     background-color: rgba(0, 0, 0, 0.547);
     backdrop-filter: blur(10px);
     color: #FFF;
-    border-radius: 10px;
+    border-radius: 10px ;
     max-width: 70%;
     max-height: 480px;
-    padding: 0 50px;
     margin:  0 auto;
-    margin-top: 10%;
-    margin-bottom: 20%;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -351,6 +362,9 @@ html {
 
 /* E-CALIFICACIONES */
 
+.main-container-home{
+    margin-top: 7%;
+}
 .tabla-calificacion th {
     height: 10px;
     background-color: #000;
@@ -442,7 +456,6 @@ html {
 /* Tabla horario central */
 .tabla-horario-centrar {
     height: auto;
-    width: fit-content;
 }
 
 /* Aqui termina las tablas horario y calificaciones */
@@ -484,60 +497,175 @@ html {
 
 /* Termina aqui el menu */
 
-/* CURSOS */
-.curso-container {
-    border: 1px solid red;
-    width: 80%;
+/* CONTENIDO DE FAURY */
+
+/* a_horario-estudiante */
+
+.selector {
+    border-radius: 20px;
     margin: 0 auto;
-}
-
-.info-p {
-    /* border: 1px solid purple; */
-    color: white;
-    height: auto;
-    background-color: #0000007b;
-    backdrop-filter: blur(10px);
-    border-radius: 5px 5px 0px 0;
+    height: 50px;
+    width: 40%;
     display: flex;
-    /* text-align: center; */
+    justify-content: space-around;
+    align-items: center;
 }
 
-.identidad-profesor {
-    width: 60%;
-    height: 40%;
-    border: 2px solid white;
+.selector-alt {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.info-p img {
-    width: 100px;
-    height: 100px;
+#select {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    margin-left: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.current span {
+    color: #FFC93D;
+}
+
+.tabla-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-horario {
+    /* border: 1px solid #FFF; */
+    background-color: rgba(0, 0, 0, 0.65);
+    margin: 0 auto;
+    color: #FFF;
+    height: 380px;
+    width: 1000px;
+    border-radius: 10px;
+}
+
+.tabla-horario-estudiante {
+    margin-bottom: 40px;
+}
+
+.tabla-centrar {
+    padding: 65px 0;
+}
+
+.tabla-horario th {
+    background-color: #000;
+}
+
+.tabla-horario td {
+    text-align: center;
+}
+
+.tabla-calificacion th,.tabla-calificacion td {
+    min-width: 180px;
+    height: 70px;
+}
+.tabla-calificacion td {
+    background-color: #0000003b;
+}
+.tabla-calificacion .nota-final {
+    border: none;
+    background: linear-gradient(180deg, #0000003b 0%, #000 100%);
+}
+
+.tabla-calificacion-centrar {
+    width: 80%; 
+    margin-left: 120px; 
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    border-radius: 20px; 
+    height: 420px;
+}
+
+.tabla-calificacion-centrar::-webkit-scrollbar {
+width: 10px;
+background-color: #000;
+
+border: 1px solid rgba(255, 255, 255, 0.185);
+border-radius: 10px;
+}
+.tabla-calificacion-centrar::-webkit-scrollbar-thumb {
+    background-color: #ffc83d50;
+    border-radius: 5px;
+}
+
+/* a_registro-estudiantes y profesores */
+
+.tabla-registro {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-left: 90px;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 900px;
+    height: 300px;
+    text-align: center;
+}
+
+.tabla-registro th {
+    height: 20px;
+}
+
+.tabla-registro td {
+    background-color: #000;
+    font-size: 14px;
+    height: 50px;
+}
+
+.tabla-registro td img {
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     object-fit: cover;
+}
+
+.tabla-registro td .editar {
+    width: 25px;
+    height: 25px;
+}
+
+/* p_calificacion-seccionA */
+
+.select-calificacion {
+    display: flex;
+    justify-content: center;
+}
+
+#select-calificacion {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    width: 125px;
+    height: 60px;
+    border-radius: 20px;
+    margin-left: 30px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.info-e {
-    border: 1px solid orange;
-}
-.info-e table {
-    border: 1px solid black;
-    width: 100%;
-    background-color: #0000007b;
-    backdrop-filter: blur(10px);
-    color: white;
-}
-.info-e legend {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
-    text-align: center;
-    margin-top: 20px;
-}
-
-.info-e th {
-    width: 100px;
-    padding: 5px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
-}
-
-/* Termina cursos */
