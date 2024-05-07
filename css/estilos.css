@@ -1,5 +1,13 @@
 @import url(./css/reset.css);
 
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
     background-image: url(../imagenes/background\(BODY\).jpg);
     background-size: cover;
@@ -18,7 +26,7 @@ html {
     margin-top: 5%;
 }
 
-/* HEADER DE LAS PAGINAS HOMES */
+/* HEADER */
 .head-h1 {
     font-size: 22px;
     font-style: italic;
@@ -26,12 +34,19 @@ html {
 .home-header {
     background-color: rgba(0, 0, 0, 0.416);
     backdrop-filter: blur(20px);
-    /* border: none; */
+}
+
+.jes-nombre-home {
+    margin-left: 20px;
 }
 
 .jes-nombre-home h2 {
     text-align: center; 
-    font-size: 20px;
+    font-size: 16px;
+}
+
+.jes-nombre-home h3 {
+    font-size: 16px;
 }
 
 .header-home-container {
@@ -207,7 +222,7 @@ html {
     border-radius: 20px;
     margin: 0 auto;
     height: 50px;
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -215,7 +230,7 @@ html {
 
 .selector-alt {
     background-color: rgba(0, 0, 0, 0.65);
-    width: 250px;
+    width: 300px;
     height: 60px;
     border-radius: 20px;
     display: flex;
@@ -245,7 +260,7 @@ html {
 }
 
 .current span {
-    color: #84B6F4;
+    color: #FFC93D;
 }
 
 .tabla-container {
@@ -320,9 +335,10 @@ border-radius: 10px;
     color: #FFF;
     margin: 0 auto;
     margin-top: 40px;
+    margin-left: 90px;
     overflow: hidden;
     border-radius: 15px;
-    width: 1150px;
+    width: 900px;
     height: 300px;
     text-align: center;
 }
@@ -361,8 +377,8 @@ border-radius: 10px;
     color: #FFF;
     border: none;
     font-size: 18px;
-    width: 150px;
-    height: 50px;
+    width: 125px;
+    height: 60px;
     border-radius: 20px;
     margin-left: 30px;
     text-align: center;
