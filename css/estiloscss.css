@@ -601,3 +601,23 @@ html {
     justify-content: center;
     align-items: center;
 }
+
+.opciones-general {
+    color: #FFF;
+    height: 400px;
+    border: 1px solid crimson;
+    margin-left: 200px;
+    position: relative;
+    display: inline-block;
+}
+
+.opciones-general li {
+    background-color: grey;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.opciones-general a {
+    color: #000;
+}
