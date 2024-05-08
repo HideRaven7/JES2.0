@@ -16,22 +16,22 @@
                     </figure>
                     <ul class="nav-ul-lateral">
                         <li class="nav-li-lateral li-perfil">
-                            <a href="p-home.html" class="a-perfil">                            
+                            <a href="e-home.html" class="a-perfil">                            
                                 <h3>Perfil</h3>
                             </a>
                         </li>
                         <li class="nav-li-lateral li-curso nav-current">
-                            <a href="#p-curso.html" class="a-curso">                            
+                            <a href="#e-curso.html" class="a-curso">                            
                                 <h3>Listado</h3>
                             </a>
                         </li> 
                         <li class="nav-li-lateral li-horario">
-                            <a href="p-horario.html" class="a-horario">                            
+                            <a href="e-horario.html" class="a-horario">                            
                                 <h3>Horario</h3>
                             </a>
                         </li>
                         <li class="nav-li-lateral li-calificaciones">
-                            <a href="p-calificaciones.html" class="a-calificaciones">                            
+                            <a href="e-calificaciones.html" class="a-calificaciones">                            
                                 <h3>Calificaciones</h3>
                             </a>
                         </li>
@@ -39,7 +39,16 @@
                 </nav>
         </header>
         <main class="main-container-home">
-            <h1>1ro A</h1>
+            <div class="Profesor-cabecera">
+                <form action="#">
+                    <select name="cursos" id="cursos">
+                        <option value="">1A</option>
+                        <option value="">1B</option>
+                        <option value="">1C</option>
+                    </select>
+                </form>
+            </div>
+            <h1 class="titulo-cabecera">1ro A</h1>
             <section class="curso-container">
                 <article class="info-p">
                     <div class="identidad-img-p">
@@ -49,74 +58,96 @@
                     </div>
                     <div class="identidad-profesor">
                         <div class="iden-profesor">
-                            <h2>Profesor</h2>
-                            <h4>Juan A. <p>Peña Nieto</p></h4>   
+                            <h4>Profesor</h4>
+                            <div class="nom_ape-p">
+                                <p>Jose M.</p>
+                                <p>Pena Pena</p>                                 
+                            </div>
                         </div>
                         <div class="materia">
-                            <h2>Materia</h2>
-                            <h4>Sociales</h4>
+                            <h4>Materia</h4>
+                            <p>Sociales</p>
                         </div>
                     </div>
                 </article>            
-                <article class="info-e">
-                    <table>
-                        <legend>Estudiante</legend>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                        </tr>
-                        <tr>
-                            <th><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></th>
-                            <th><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></th>
-                            
-                        </tr>
-                        <tr>
-                            <th><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></th>
-                            <th><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></th>
-                        </tr>
-                        <tr>
-                            <th><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></th>
-                            <th><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></th>
-                        </tr>
-                        <tr>
-                            <th><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></th>
-                            <th><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></th>
-                        </tr>
-                        <tr class='estudiante-current'>
-                            <th><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th>Nombre</th>
-                            <th><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></th>
-                            <th><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></th>
-                        </tr>
-                    </table>
+                <article class="article-t-e">
+                    <h2 class="legend">Registro de Estudiantes</h2>
+                    <div class="info-e">
+                        <table class="tabla-estudiante">
+                            <tr>
+                                <th>Perfil</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>Ver Perfiles</th>
+                                <th>Calificar</th>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt=""></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></a></td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt=""></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></a></td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt=""></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></a></td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt=""></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></a></td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt=""></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></a></td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt=""></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></a></td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt=""></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/libro.svg" alt=""></figure></a></td>
+                                <td class="t-td"><a href="#"><figure><img src="imagenes/iconos/editar.svg" alt=""></figure></a></td>
+                            </tr>
+                        </table>
+                    </div>
                 </article>
             </section>
         </main>    

@@ -520,18 +520,22 @@ html {
 
 /* CURSOS */
 .curso-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 80%;
+    padding-bottom: 10px;
     margin: 0 auto;
+    margin-top: 5%;
 }
 
 .info-p {
     color: white;
+    /* border: 1px solid #ffffff19; */
+    box-shadow: 1px 1px #ffffff19;
     height: auto;
     margin: 0 auto;
     background-color: #0000007b;
     backdrop-filter: blur(10px);
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 10px;
     display: flex;
     width: 60%;
 }
@@ -539,12 +543,11 @@ html {
 .identidad-profesor {
     width: 60%;
     height: 60%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: auto;
     display: flex;
     justify-content: space-evenly;
     margin-right: 60px;
-    /* flex-direction: column; */
 }
 
 .identidad-profesor h4 {
@@ -570,39 +573,73 @@ html {
     margin-right: 10px;
 }
 
-.info-e {
-    border: 1px solid orange;
+.titulo-cabecera {
+    text-align: center;
+    color: white;
+    /* border: 1px solid red; */
+    transform: translateY(50px);
 }
-.info-e table {
-    border: 1px solid black;
-    width: 100%;
-    background-color: #0000007b;
+
+.tabla-estudiante{
+    margin: 0 auto;
+    border-radius: 5px;
     backdrop-filter: blur(10px);
+    text-align: center;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.article-t-e {
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+.info-e {
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 352px;
+}
+
+.info-e::-webkit-scrollbar {
+    display: none;
+}
+
+.tabla-estudiante th {
+    padding: 10px 0;
+    color: #FFC93D;
+}
+
+.t-td, .tabla-estudiante th {
+    background: #000000a4;
+}
+
+.tabla-estudiante tr {
+    border-bottom: 1px solid #ffffff2b;
+}
+
+.tabla-estudiante tr:nth-last-of-type(1) {
+    border-bottom: none;
+}
+
+.t-td {
     color: white;
 }
 
-.color-amarillo {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+.legend {
+    margin: 20px 0 5px 0;
+    color: white;
     text-align: center;
-    margin-top: 20px;
-    color: #FFC93D;
-    padding-bottom: 5px;
 }
 
-.info-e th {
-    width: 10%;
-    /* padding: 5px 0; */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
-}
-
-.estudiante-img figure {
-    width: 40px;
-    height: 40px;
-}
-
-.estudiante-img img {
-    width: 100%;
+.estudiante-img figure, .estudiante-img img {
+    width: 30px;
+    height: 30px;
     object-fit: cover;
+    transform: translateX(15px);
 }
 
 .estudiante-current {
