@@ -19,11 +19,12 @@ html {
     font-style: italic;
 }
 .home-header {
-    background-color: #000000d2;
-    backdrop-filter: blur(10px);
+    background-color: #0000009c;
+    backdrop-filter: blur(20px);
     max-width: 16%;
     min-width: 16%;
     height: 100%;
+    
 }
 
 .jes-nombre-home h2 {
@@ -72,12 +73,22 @@ html {
     align-items: center;
     text-decoration: none;
     color: #FFC93D;
-    background-color: rgba(0, 0, 0, 0.318);
-    margin-bottom: 12px;
+    /* background-color: rgba(0, 0, 0, 0.318); */
+    /* margin-bottom: 2px; */
     height: 6vh;
-    margin-top: 12px;
+    /* margin-top: 12px; */
     border-radius: inherit;
+    /* border: 1px solid rgba(255, 255, 255, 0.096); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.096);
 }
+
+.nav-li-lateral a:nth-of-type(2) {
+    margin-top: 10px;
+}
+
+/* .nav-li-lateral a:nth-last-of-type(1){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+} */
 
 .a-perfil::before {
     content: url(imagenes/iconos/usuario.svg);
@@ -91,7 +102,12 @@ html {
 .a-calificaciones::before {
     content: url(imagenes/iconos/libro.svg);
 }
-.a-perfil::before,.a-curso::before,.a-horario::before,.a-calificaciones::before {
+
+.a-confi::before {
+    content: url(imagenes/iconos/ajuste.svg);
+}
+
+.a-perfil::before,.a-curso::before,.a-horario::before,.a-calificaciones::before,.a-confi::before {
     width: 8px;
     height: 8px;
     transform: translateY(-10px);
@@ -103,8 +119,8 @@ html {
 }
 
 .nav-current {
-    background-color: #ffc83d3e;
-    border-radius: 10px 0px 0px 10px;
+    background-color: #ffc83d25;
+    /* border-radius: 30px; */
 }
 
 .nav-current a {
@@ -115,6 +131,11 @@ html {
     color: white;
 }
 
+.nav-li-lateral a:hover {
+    color: white;
+    transition: all 0.8s;
+}
+
 
 .logo-jes {
     width: 50%;
@@ -122,12 +143,42 @@ html {
 }
 
 .logo-jes img {
-    width: 100%
+    width: 100%;
+    margin-left: 15px;
 }
 
 #li-admin {
     background-color: rgba(0, 255, 255, 0.24);
 }
+
+.nav-jes-nombre {
+    color: rgba(255, 255, 255, 0.719);
+    text-align: center;
+    margin-bottom: 10px;
+    transform: translateY(-14px);
+}
+
+.salir-button {
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+    width: 100%;
+    padding: 10px 0;
+    font-weight: bold;
+    position: absolute;
+    bottom: 2%;
+    /* border-radius: 20px; */
+    /* left: 20%; */
+}
+
+.salir-button:hover {
+    color: red;
+    transition: all 0.3s;
+}
+
 /* TERMINACION DEL CODDIGO DEL DISEÑO DEL NAV */
 
 /* ------------------------------------------------ */
@@ -518,9 +569,12 @@ html {
 
 /* Termina aqui el menu */
 
+.tabla-calificacion-centrar {
+    margin-top: 10%;
+}
+
 /* CURSOS */
 .curso-container {
-    /* border: 1px solid red; */
     width: 80%;
     padding-bottom: 10px;
     margin: 0 auto;
@@ -636,8 +690,8 @@ html {
 }
 
 .estudiante-img figure, .estudiante-img img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
     transform: translateX(15px);
 }
