@@ -169,14 +169,16 @@ html {
     padding: 10px 0;
     font-weight: bold;
     position: absolute;
-    bottom: 2%;
-    /* border-radius: 20px; */
+    bottom: 0%;
     /* left: 20%; */
 }
 
 .salir-button:hover {
-    color: red;
+    color: rgba(255, 0, 0, 0.719);
     transition: all 0.3s;
+    /* background-color: #0000008e; */
+    /* backdrop-filter: blur(5px); */
+    border-top: 1px solid rgba(255, 255, 255, 0.336);
 }
 
 /* TERMINACION DEL CODDIGO DEL DISEÑO DEL NAV */
@@ -528,6 +530,11 @@ html {
 .tabla-horario-centrar {
     height: auto;
     width: fit-content;
+}
+
+.tabla-horario {
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 /* Aqui termina las tablas horario y calificaciones */
