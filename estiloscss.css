@@ -120,6 +120,7 @@ html {
 
 .nav-current {
     background-color: #ffc83d25;
+    border-right: 2px solid #FFC93D;
     /* border-radius: 30px; */
 }
 
@@ -641,6 +642,28 @@ html {
     transform: translateY(50px);
 }
 
+#profesor_none {
+    display: none;
+}
+
+.Profesor-cabecera {
+    transform: translateY(50px);
+    margin: 0 auto;
+    width: 40%;
+    padding: 10px 0;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.Profesor-cabecera select {
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #0000007b;
+    box-shadow: 1px 1px #ffffff19;
+    color: white;
+    border: none;
+}
+
 .tabla-estudiante{
     margin: 0 auto;
     border-radius: 5px;
@@ -688,6 +711,7 @@ html {
 
 .t-td {
     color: white;
+    white-space: nowrap;
 }
 
 .legend {
