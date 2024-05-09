@@ -679,6 +679,8 @@ html {
     width: 80%;
     /* border: 1px solid red; */
     margin: 0 auto;
+    box-shadow: 1px 1px 10px #ffffff19;
+    background-color: #0000007b;
 }
 
 .info-e {
@@ -697,9 +699,14 @@ html {
     color: #FFC93D;
 }
 
-.t-td, .tabla-estudiante th {
-    background: #000000a4;
-}
+/* .tabla-estudiante th {
+    background-color: #00000060;
+} */
+
+/* .tabla-estudiante tr:nth-of-type(1) {
+    background-color: #00000060;
+    backdrop-filter: blur(20px);
+} */
 
 .tabla-estudiante tr {
     border-bottom: 1px solid #ffffff2b;
@@ -715,6 +722,10 @@ html {
 }
 
 .legend {
+    width: 100%;
+    background-color: #00000060;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid #ffffff2b;
     margin: 20px 0 5px 0;
     color: white;
     text-align: center;
