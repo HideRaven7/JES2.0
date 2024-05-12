@@ -32,15 +32,6 @@ html {
     font-size: 20px;
 }
 
-.header-home-container {
-    display: flex;
-    height: 60px;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    width: 100%;
-}
-
 .header-form figure {
     width: 60px;
     height: 50px;
@@ -48,6 +39,20 @@ html {
 .header-form img {
     width: 100%;
     object-fit: cover;
+}
+
+.otro-header {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 30px;
+}
+.header-especial-container {
+    width: 100%;
+    height: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
 }
 
 /* AQUI TERMINA LOS HEADER DE LOS HOMES */
@@ -422,6 +427,14 @@ html {
     padding-top: 10px;
 }
 
+.tabla-calificacion-centrar {
+    margin-top: 10%;
+}
+
+.calificacion-centrar-p {
+    margin-top: 0%;
+}
+
 .tabla-centrar {
     padding: 65px 0;
 }
@@ -577,9 +590,7 @@ html {
 
 /* Termina aqui el menu */
 
-.tabla-calificacion-centrar {
-    margin-top: 10%;
-}
+
 
 /* CURSOS */
 .curso-container {
@@ -741,7 +752,7 @@ html {
     width: 40px;
     height: 40px;
     object-fit: cover;
-    transform: translateX(15px);
+    /* transform: translateX(15px); */
 }
 
 .estudiante-current {
@@ -749,3 +760,10 @@ html {
 }
 
 /* Termina cursos */
+.main-container-home-especial {
+    width: 100%;
+}
+
+.main-container-home-especial .botones-container {
+    transform: translateX(-30%);
+}
