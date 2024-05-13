@@ -615,11 +615,16 @@ html {
     flex-wrap: wrap;
 }
 
+#central h3 {
+    position: absolute;
+    top: 15px;
+}
+
 .opciones-general {
     color: #FFF;
     height: 120px;
     width: 200px;
-    margin: 15px;
+    margin: 10px;
     position: relative;
 }
 
@@ -647,4 +652,20 @@ html {
     background-color: rgba(0, 0, 0, 0.2);
     height: 140px;
     transition: all .3s;
+}
+
+.cuenta-central {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.config-cuenta {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 60px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
