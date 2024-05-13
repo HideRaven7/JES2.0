@@ -1,7 +1,7 @@
 @import url(./css/reset.css);
 
 body {
-    background-image: url(../imagenes/background\(BODY\).jpg);
+    background-image: url(imagenes/background\(BODY\).jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -157,10 +157,10 @@ html {
     color: white;
 }
 
-.nav-li-lateral a:hover {
+/* .nav-li-lateral a:hover {
     color: white;
     transition: all 0.8s;
-}
+} */
 
 
 .logo-jes {
@@ -321,6 +321,7 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    border: 1px solid rgba(255, 255, 255, 0.262);
 }
 
 .izquierda-arriba {
@@ -350,14 +351,15 @@ html {
     text-align: center;
     color: gray;
     position: relative;
-    bottom: 20px;
+    bottom: 24px;
+    font-size: 14px;
 }
 
 .izquierda-abajo h4 {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 5px;
+    bottom: 20px;
 }
 
 .izquierda-arriba img {
@@ -730,6 +732,7 @@ html {
     min-height: 100%;
     max-height: 100%;
 }
+
 
 .article-t-e-p {
     width: 90%;
