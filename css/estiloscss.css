@@ -669,3 +669,29 @@ html {
     justify-content: center;
     text-align: center;
 }
+
+#report-area {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.reportar {
+    display: flex;
+    flex-direction: column;
+}
+
+.reportar button {
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #FFC93D;
+    margin: 10px;
+    height: 20px;
+    width: 50px;
+}
+
+.botones-reportar {
+    display: flex;
+    justify-content: flex-end;
+}
