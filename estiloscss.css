@@ -719,6 +719,11 @@ html {
     object-fit: cover;
 }
 
+.p-td img{
+    width: 24px;
+    height: 24px;
+}
+
 .tabla-estudiante tr {
     max-height: 30px;
     padding: 5px 0;
@@ -741,14 +746,20 @@ html {
 
 .tabla-estudiante {
     width: 100%;
+    backdrop-filter:blur(15px);
+    /* border-spacing: 20px; */
+    /* border-collapse: collapse; */
 }
 
 .article-t-e {
     width: 80%;
-    /* border: 1px solid red; */
     margin: 0 auto;
     box-shadow: 1px 1px 10px #ffffff19;
     background-color: #0000007b;
+}
+
+.article-t-e-p {
+    width: 90%;
 }
 
 .info-e {
@@ -763,12 +774,12 @@ html {
 }
 
 .tabla-estudiante tr {
-    border-bottom: 1px solid #ffffff2b;
+    border-bottom: 2px solid #ffffff15;
 }
 
-.tabla-estudiante tr:nth-last-of-type(1) {
+/* .tabla-estudiante tr:nth-last-of-type(1) {
     border-bottom: none;
-}
+} */
 
 
 .legend {
