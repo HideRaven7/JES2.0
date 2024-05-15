@@ -103,6 +103,10 @@ html {
     border-bottom: 1px solid rgba(255, 255, 255, 0.096);
 }
 
+.nav-ul-lateral-admin a {
+    color:#00ffffa7;
+}
+
 .nav-li-lateral a:nth-of-type(2) {
     margin-top: 10px;
 }
@@ -141,19 +145,20 @@ html {
     border-right: 2px solid #FFC93D;
 }
 
+
 .nav-current a {
     border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.nav-current h3 {
     color: white;
 }
 
-/* .nav-li-lateral a:hover {
-    color: white;
-    transition: all 0.8s;
-} */
+.admin-current {
+    background-color: #00ffff16;
+    border-right: 2px solid aqua;
+}
 
+.admin-current a {
+    color: white;
+}
 
 .logo-jes {
     width: 50%;
@@ -165,9 +170,6 @@ html {
     margin-left: 15px;
 }
 
-#li-admin {
-    background-color: rgba(0, 255, 255, 0.24);
-}
 
 .nav-jes-nombre {
     color: rgba(255, 255, 255, 0.719);
@@ -401,7 +403,7 @@ html {
 }
 
 .admin-color {
-    color: aqua;
+    color: #00ffffa8;
 }
 
 .izquierda-arriba .admin-color {
