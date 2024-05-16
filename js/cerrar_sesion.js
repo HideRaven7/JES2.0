@@ -1,9 +1,9 @@
 async function confirmarOperacion() {
     // Utilizamos un Promise para manejar la operación asíncrona
-    return new Promise((resolve) => {
+    return new Promise((resolver) => {
         // Mostramos el cuadro de diálogo de SweetAlert2
         Swal.fire({
-            html: '<span class="white">"Lo sentimos, parece que el ID o la contraseña ingresados son incorrectos. Por favor, inténtalo de nuevo."</span',
+            html: '<span class="white">"Est&aacute; seguro que quiere cerrar sesion?"</span',
             backdrop: true,
             customClass: {
                 popup: 'emergente-class',
@@ -18,24 +18,23 @@ async function confirmarOperacion() {
             cancelButtonColor: '#d33',
             confirmButtonText: 'Sí, continuar',
             cancelButtonText: 'Cancelar'
-        }).then((result) => {
+        }).then((resultado) => {
             // Resolvemos el Promise con el valor de la acción del usuario
-            resolve(result.isConfirmed);
+            resolver(resultado.isConfirmed);
         });
     });
 }
 
 // Ejemplo de uso
-async function ejecutarOperacion() {
+async function cerrarSesion() {
     // Esperamos la confirmación del usuario
     const confirmado = await confirmarOperacion();
 
-    // Verificamos si el usuario confirmó la operación
+    // si el resultado es true (confirmar) entonces mandara al index.html
     if (confirmado) {
         window.location = 'index.html';
-        // Aquí puedes agregar el código para realizar la operación
     }
 }
 
-// Llamamos a la función para ejecutar la operación
-ejecutarOperacion();
+// Llamamos a la función cerrar sesion
+cerrarSesion();
