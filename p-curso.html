@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="imagenes/recursos/logo-jes.png">
+    <link rel="stylesheet" href="estiloscss.css">
+</head>
+<body>
+    <div class="body-container">
+        <header class="home-header">
+            <nav class="home-nav-container">
+                <figure class="logo-jes">
+                    <img src="imagenes/recursos/logo-jes.png" alt="logo-jes">
+                </figure>
+                <div class="nav-jes-nombre">
+                    <h2>JES</h2>
+                    <h3>Junior Explorers System</h3>
+                </div>
+                <ul class="nav-ul-lateral">
+                    <li class="nav-li-lateral li-perfil">
+                        <a href="p-home.html" class="a-perfil">                            
+                            <h3>Perfil</h3>
+                        </a>
+                    </li>
+                    <li class="nav-li-lateral li-curso nav-current">
+                        <a href="#p-curso.html" class="a-curso">                            
+                            <h3>Listado</h3>
+                        </a>
+                    </li> 
+                    <li class="nav-li-lateral li-horario">
+                        <a href="p-horario.html" class="a-horario">                            
+                            <h3>Horario</h3>
+                        </a>
+                    </li>
+                    <li class="nav-li-lateral li-confi">
+                        <a href="#" class="a-confi">                            
+                            <h3>Configuraci&oacute;n</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="salir-button" onclick="alert('estas seguro')">Cerrar Sesion</button>
+        </header>
+        <main class="main-container-home">
+            <div class="Profesor-cabecera">
+                <form action="#">
+                    <select name="cursos" id="cursos">
+                        <option value="">1A</option>
+                        <option value="">1B</option>
+                        <option value="">1C</option>
+                    </select>
+                </form>
+            </div>
+            <h1 class="titulo-cabecera" id="profesor_none">1ro A</h1>
+            <section class="curso-container">
+                <article class="info-p">
+                    <div class="identidad-img-p">
+                        <figure>
+                            <img src="imagenes/random-glasses-guy.jpeg" alt="">
+                        </figure>
+                    </div>
+                    <div class="identidad-profesor">
+                        <div class="iden-profesor">
+                            <h4>Profesor</h4>
+                            <div class="nom_ape-p">
+                                <p>Jose M.</p>
+                                <p>Pena Pena</p>                                 
+                            </div>
+                        </div>
+                        <div class="materia">
+                            <h4>Materia</h4>
+                            <p>Sociales</p>
+                        </div>
+                    </div>
+                </article>            
+                <article class="article-t-e article-t-e-p">
+                    <!-- <h2 class="legend"></h2> -->
+                    <div class="info-e">
+                        <table class="tabla-estudiante tabla-estudiante-p">
+                            <legend class="legend">Registro de Estudiantes</legend>
+                            <tr>
+                                <th>Perfil</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>ID</th>
+                                <th>Email</th>
+                                <th>Ver Perfiles</th>
+                                <th>Calificar</th>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt=""></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td p-td"><a href="#"><figure><img src="imagenes/iconos/archivo-documento.svg" alt="ver-perfil"></figure></a></td>
+                                <td class="t-td p-td"><a href="p-calificaciones_e.html"><figure><img src="imagenes/iconos/editar-documento.svg" alt="ver-perfil"></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt="perfil-estudiante"></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td p-td"><a href="#"><figure><img src="imagenes/iconos/archivo-documento.svg" alt="ver-perfil"></figure></a></td>
+                                <td class="t-td p-td"><a href="p-calificaciones_e.html"><figure><img src="imagenes/iconos/editar-documento.svg" alt="ver-perfil"></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt="perfil-estudiante"></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td p-td"><a href="#"><figure><img src="imagenes/iconos/archivo-documento.svg" alt="ver-perfil"></figure></a></td>
+                                <td class="t-td p-td"><a href="p-calificaciones_e.html"><figure><img src="imagenes/iconos/editar-documento.svg" alt="ver-perfil"></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt="perfil-estudiante"></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td p-td"><a href="#"><figure><img src="imagenes/iconos/archivo-documento.svg" alt="ver-perfil"></figure></a></td>
+                                <td class="t-td p-td"><a href="p-calificaciones_e.html"><figure><img src="imagenes/iconos/editar-documento.svg" alt="ver-perfil"></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt="perfil-estudiante"></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td p-td"><a href="#"><figure><img src="imagenes/iconos/archivo-documento.svg" alt="ver-perfil"></figure></a></td>
+                                <td class="t-td p-td"><a href="p-calificaciones_e.html"><figure><img src="imagenes/iconos/editar-documento.svg" alt="ver-perfil"></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt="perfil-estudiante"></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td p-td"><a href="#"><figure><img src="imagenes/iconos/archivo-documento.svg" alt="ver-perfil"></figure></a></td>
+                                <td class="t-td p-td"><a href="p-calificaciones_e.html"><figure><img src="imagenes/iconos/editar-documento.svg" alt="ver-perfil"></figure></a></td>
+                            </tr>
+                            <tr>
+                                <td class="estudiante-img t-td"><figure><img src="imagenes/recursos/perfil.Estudiante.png" alt="perfil-estudiante"></figure></td>
+                                <td class="t-td">Juana</td>
+                                <td class="t-td">Rodriguez</td>
+                                <td class="t-td">#12-031-10</td>
+                                <td class="t-td">juanita2024@gmail.com</td>
+                                <td class="t-td p-td"><a href="#"><figure><img src="imagenes/iconos/archivo-documento.svg" alt="ver-perfil"></figure></a></td>
+                                <td class="t-td p-td"><a href="p-calificaciones_e.html"><figure><img src="imagenes/iconos/editar-documento.svg" alt="ver-perfil"></figure></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+            </section>
+        </main>    
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
