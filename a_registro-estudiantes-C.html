@@ -3,47 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" href="imagenes/recursos/logo-jes.png">
+    <title>Registro Secci&oacute;n C</title>
     <link rel="stylesheet" href="css/estiloscss.css">
+    <link rel="icon" href="imagenes/recursos/logo-jes.png">
+    <style>
+        body {
+            overflow-y: scroll;
+            /* overflow-x: hidden; */
+        }
+        body::-webkit-scrollbar {
+            background-color: #000000bd;
+            width: 10px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #00000060;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="body-container">
-        <header class="home-header">
+    <!-- Usamos el header -->
+    <header class="home-header">
+        <div class="header-home-container">
+            <div class="mobile-none jes-nombre-home">
+                <h2>JES</h2>
+                <h3>Junior Explorers System</h3>
+            </div>
+            <nav class="menu-navegador">
+                <ul>
+                    <li class="menu">
+                        <figure>
+                            <img src="imagenes/iconos/menu.svg" alt="menu-desplegable">
+                        </figure>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-container-home">
             <nav class="home-nav-container">
                 <figure class="logo-jes">
                     <img src="imagenes/recursos/logo-jes.png" alt="logo-jes">
                 </figure>
-                <div class="nav-jes-nombre">
-                    <h2>JES</h2>
-                    <h3>Junior Explorers System</h3>
-                </div>
                 <ul class="nav-ul-lateral">
-                    <li class="nav-li-lateral li-perfil">
-                        <a href="p-home.html" class="a-perfil">                            
+                    <li class="nav-li-lateral li-perfil nav-current">
+                        <a href="#" class="a-perfil">                            
                             <h3>Perfil</h3>
                         </a>
                     </li>
-                    <li class="nav-li-lateral li-curso nav-current">
-                        <a href="#p-curso.html" class="a-curso">                            
+                    <li class="nav-li-lateral li-curso">
+                        <a href="#" class="a-curso">                            
                             <h3>Listado</h3>
                         </a>
                     </li> 
                     <li class="nav-li-lateral li-horario">
-                        <a href="p-horario.html" class="a-horario">                            
+                        <a href="e-horario.html" class="a-horario">                            
                             <h3>Horario</h3>
                         </a>
                     </li>
-                    <li class="nav-li-lateral li-confi">
-                        <a href="#" class="a-confi">                            
-                            <h3>Configuraci&oacute;n</h3>
+                    <li class="nav-li-lateral li-calificaciones">
+                        <a href="e-calificaciones.html" class="a-calificaciones">                            
+                            <h3>Calificaciones</h3>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <button class="salir-button" onclick="cerrarSesion()">Cerrar Sesion</button>
-        </header>
-        <main class="main-container-home">
+        <section class="central">
+            <div class="selector">
+            <div class="selector-alt">
+                <a href="a_registro-estudiantes-B.html" class="current"><span>Estudiante</span></a>
+                <a href="a_registro-profesores-B.html" class="current">Profesor</a>
+            </div>
+            <form class="select">
+                <!-- Creamos las opciones para alternar entre grados -->
+                <select name="secciones" id="select">
+                    <option value="">1ro B</option>
+                    <option value="">2do B</option>
+                    <option value="">3ro B</option>
+                    <option value="">4to B</option>
+                    <option value="">5to B</option>
+                    <option value="">6to B</option>
+                </select>
+            </form>
+        </div>
+        <section style="padding-bottom: 10px;">
             <table class="tabla-registro tabla-registro-border" style="border-radius: inherit;border-radius: 10px 10px 0 0;">
                 <tr>
                     <th>Perfil</th>
@@ -58,6 +101,7 @@
                     <td>Juana</td>
                     <td>Rodriguez</td>
                     <td>#12-031-10</td>
+                    <td>12</td>
                     <td>juanita2024@gmail.com</td>
                     <td><a href="a-perfil-Estudiante-B.html"><figure><img src="imagenes/iconos/lapiz-editar.svg" alt="" class="editar"></figure></a></td>
                 </tr>
@@ -101,10 +145,7 @@
                     </td>
                 </tr>
             </table>
-        </main>    
-    </div>
-    <script src="js/menu.js"></script>
-    <script src="js/cerrar_sesion.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        </section>
+    </main>
 </body>
 </html>
